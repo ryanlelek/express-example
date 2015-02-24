@@ -16,6 +16,15 @@ test:
 	./node_modules/mocha/bin/mocha \
 		test/;
 
+.PHONY: coverage
+coverage:
+	# Code Coverage Check
+	./node_modules/istanbul/lib/cli.js cover \
+	./node_modules/mocha/bin/_mocha -- \
+		--recursive \
+		-R spec \
+		test/;
+
 .PHONY: start
 start:
 	# Start HTTP Server
