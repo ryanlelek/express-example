@@ -1,5 +1,9 @@
 #!/usr/bin/make
 
+# The first command listed is the default
+.PHONY: default
+default: clean install;
+
 .PHONY: install
 install:
 	# Install Node.js Modules
