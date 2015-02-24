@@ -16,12 +16,7 @@ clean:
 	rm -rf ./coverage/;
 
 .PHONY: test
-test:
-	# Run Mocha Tests
-	./node_modules/mocha/bin/mocha \
-		--recursive \
-		-R spec \
-		test/;
+test: delint coverage;
 
 .PHONY: delint
 delint:
@@ -30,6 +25,14 @@ delint:
 		app/ \
 		test/ \
 		server.js;
+
+.PHONY: integration
+integration:
+	# Run Mocha Tests
+	./node_modules/mocha/bin/mocha \
+		--recursive \
+		-R spec \
+		test/;
 
 .PHONY: coverage
 coverage:
