@@ -1,6 +1,6 @@
 {
   "name"        : "express-example",
-  "version"     : "1.4.0",
+  "version"     : "1.4.1",
   "description" : "Example for Express",
   "main"        : "app/index.js",
   "author"      : "Ryan Lelek <ryanlelek@gmail.com>",
