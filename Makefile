@@ -19,6 +19,14 @@ test:
 		-R spec \
 		test/;
 
+.PHONY: delint
+delint:
+	# Delint with JSHint
+	./node_modules/jshint/bin/jshint \
+		app/ \
+		test/ \
+		server.js;
+
 .PHONY: coverage
 coverage:
 	# Code Coverage Check
