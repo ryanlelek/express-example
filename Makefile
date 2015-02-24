@@ -8,12 +8,15 @@ install:
 .PHONY: clean
 clean:
 	# Remove Temporary Files
-	rm -rf node_modules/;
+	rm -rf ./node_modules/;
+	rm -rf ./coverage/;
 
 .PHONY: test
 test:
 	# Run Mocha Tests
 	./node_modules/mocha/bin/mocha \
+		--recursive \
+		-R spec \
 		test/;
 
 .PHONY: coverage
@@ -33,4 +36,4 @@ report:
 .PHONY: start
 start:
 	# Start HTTP Server
-	npm start;
+	node ./server.js;
