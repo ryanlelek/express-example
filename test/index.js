@@ -47,3 +47,15 @@ describe('Home', function () {
   });
 
 });
+
+describe('Static Files', function () {
+
+  it('should server static files', function (done) {
+    request.get('/static.txt')
+      .expect('Content-Type', /text/)
+      .expect(200)
+      .expect('Static File')
+      .end(done);
+  });
+
+});
