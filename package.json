@@ -15,6 +15,7 @@
   "devDependencies" : {
     "jshint"    : "2.6.0",
     "mocha"     : "2.1.0",
+    "should"    : "5.0.1",
     "supertest" : "0.15.0",
     "istanbul"  : "0.3.6"
   },
