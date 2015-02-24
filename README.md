@@ -2,7 +2,12 @@ Express Example
 ===============
 
 # Installation
-`$ npm install`
+`$ make install`
+
+# Tests
+`$ make test`
 
 # Start the HTTP Server
-`$ npm start`
+`$ make start`
+
+See Makefile for more
