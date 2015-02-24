@@ -25,6 +25,11 @@ coverage:
 		-R spec \
 		test/;
 
+.PHONY: report
+report:
+	# Open Code Coverage Report in Browser (OS X)
+	open ./coverage/lcov-report/index.html;
+
 .PHONY: start
 start:
 	# Start HTTP Server
