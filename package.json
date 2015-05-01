@@ -13,7 +13,7 @@
     "express" : "4.12.3"
   },
   "devDependencies" : {
-    "jshint"    : "2.6.0",
+    "jshint"    : "2.7.0",
     "mocha"     : "2.1.0",
     "should"    : "5.0.1",
     "supertest" : "0.15.0",
